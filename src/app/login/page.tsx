@@ -10,7 +10,8 @@ import {
 } from "@mui/material";
 import { useAppDispatch, useAppSelector } from "../store/store";
 import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function LoginPage() {
   const dispatch = useAppDispatch();
@@ -20,6 +21,14 @@ export default function LoginPage() {
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+
+  const router = useRouter();
+
+  useEffect(() => {
+    if (isAuth) {
+      router.replace('/dashboard');
+    }
+  }, [isAuth, router]);
 
   const handleLogin = async () => {
     dispatch(loginStart());
@@ -31,8 +40,8 @@ export default function LoginPage() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          username: "emilys",
-          password: "emilyspass",
+          username: username,
+          password: password,
         }),
       });
 

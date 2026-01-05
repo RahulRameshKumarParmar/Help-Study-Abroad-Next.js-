@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///media/rahul/01DC61DD2DE98E60/Storage/GitHub/Help-Study-Abroad-Next.js-/src/app/page.tsx"],"sourcesContent":["import { Button } from \"@mui/material\";\n\nexport default function Home() {\n  return (\n    <div>\n      <h1>Welcome to Next.js</h1>\n      <Button variant=\"contained\">Test Button</Button>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AAAA;;;AAEe,SAAS;IACtB,qBACE,8OAAC;;0BACC,8OAAC;0BAAG;;;;;;0BACJ,8OAAC,2MAAM;gBAAC,SAAQ;0BAAY;;;;;;;;;;;;AAGlC"}}]
+}

@@ -1,0 +1,270 @@
+[00:00:25.074] Server  LOG     ✓ Ready in 16.3s
+[00:01:00.057] Server  LOG     ○ Compiling /login ...
+[00:01:06.179] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:35:48.301] Server  LOG     ✓ Compiled in 119ms
+[00:36:05.553] Server  LOG     ✓ Compiled in 17ms
+[00:36:08.943] Server  LOG     ✓ Compiled in 16ms
+[00:36:16.306] Server  LOG     ✓ Compiled in 16ms
+[00:36:20.172] Server  LOG     ✓ Compiled in 22ms
+[00:37:16.416] Server  LOG     ✓ Compiled in 120ms
+[00:38:08.966] Server  LOG     ✓ Compiled in 208ms
+[02:25:10.195] Server  LOG     ✓ Compiled in 17ms
+[02:25:22.796] Server  LOG     ✓ Compiled in 28ms
+[02:25:22.904] Browser ERROR   ./src/app/dashboard/page.tsx:15:5
+Parsing ecmascript source code failed
+  13 |       const fetchData = await fetch("https://dummyjson.com/users?limit=10&skip=0");
+  14 |       const 
+> 15 |     }
+     |     ^
+  16 |   })
+  17 |   return (
+  18 |     <AuthGuard>
+
+Unexpected token `}`. Expected yield, an identifier, [ or {
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[02:25:52.736] Server  LOG     ✓ Compiled in 20ms
+[02:28:11.981] Server  LOG     ✓ Compiled in 20ms
+[02:36:20.070] Server  LOG     ✓ Compiled in 187ms
+[02:36:29.757] Server  LOG     ✓ Compiled in 19ms
+[02:36:30.796] Browser ERROR   uncaughtError: ReferenceError: Paper is not defined
+[02:36:35.757] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:36:35.776] Server  LOG     ✓ Compiled in 177ms
+[02:36:36.655] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:36:46.465] Server  LOG     ✓ Compiled in 139ms
+[02:37:09.331] Server  LOG     ✓ Compiled in 158ms
+[02:37:19.609] Server  LOG     ✓ Compiled in 133ms
+[02:37:24.210] Server  LOG     ✓ Compiled in 12ms
+[02:39:29.512] Server  LOG     ✓ Compiled in 22ms
+[02:39:32.778] Server  LOG     ✓ Compiled in 13ms
+[02:42:11.784] Server  LOG     ✓ Compiled in 121ms
+[02:42:49.197] Server  LOG     ✓ Compiled in 29ms
+[02:42:50.241] Browser ERROR   ./src/app/dashboard/page.tsx:40:16
+Parsing ecmascript source code failed
+  38 |               {allUsers.map((user) => (
+  39 |                 
+> 40 |               ))}
+     |                ^
+  41 |             </TableBody>
+  42 |           </Table>
+  43 |         </TableContainer>
+
+Expected '</', got ')'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[02:45:26.531] Browser ERROR   ./src/app/dashboard/page.tsx:42:16
+Parsing ecmascript source code failed
+  40 |               {allUsers.map((user) => (
+  41 |
+> 42 |               ))}
+     |                ^
+  43 |             </TableBody>
+  44 |           </Table>
+  45 |         </TableContainer>
+
+Expected '</', got ')'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[02:45:41.861] Server  LOG     ✓ Compiled in 26ms
+[02:47:02.214] Server  LOG     ✓ Compiled in 15ms
+[02:47:17.185] Server  LOG     ✓ Compiled in 13ms
+[02:55:47.572] Server  LOG     ✓ Compiled in 21ms
+[02:55:52.539] Server  LOG     ✓ Compiled in 15ms
+[02:57:56.496] Server  LOG     ✓ Compiled in 20ms
+[02:57:57.528] Browser ERROR   ./src/app/dashboard/page.tsx:9:48
+Parsing ecmascript source code failed
+   7 | export default function DashboardPage() {
+   8 |
+>  9 |   const [allUsers, setAllUsers] = useState<[] |>([]);
+     |                                                ^
+  10 |
+  11 |   useEffect(() => {
+  12 |     const getUsers = async () => {
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[02:57:58.567] Server  LOG     ✓ Compiled in 22ms
+[03:10:22.763] Server  LOG     ✓ Compiled in 38ms
+[03:11:44.462] Server  LOG     ✓ Compiled in 13ms
+[03:11:47.175] Server  LOG     ✓ Compiled in 15ms
+[03:11:55.462] Server  LOG     ✓ Compiled in 82ms
+[03:36:49.351] Server  LOG     ✓ Compiled in 214ms
+[03:36:58.800] Browser ERROR   uncaughtError: TypeError: allUsers.map is not a function
+[03:37:44.064] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:37:44.085] Server  LOG     ✓ Compiled in 38ms
+[03:37:44.960] Server  ERROR   ⨯ ReferenceError: allUsers is not defined
+[03:37:45.564] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:37:45.869] Browser ERROR   uncaughtError: ReferenceError: allUsers is not defined
+[03:37:48.569] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:37:48.593] Server  LOG     ✓ Compiled in 16ms
+[03:37:48.952] Server  ERROR   ⨯ ReferenceError: allUsers is not defined
+[03:37:49.471] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:37:49.775] Browser ERROR   uncaughtError: ReferenceError: allUsers is not defined
+[03:38:02.128] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:38:02.149] Server  LOG     ✓ Compiled in 20ms
+[03:38:03.009] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:38:09.863] Browser ERROR   uncaughtError: TypeError: Users.map is not a function
+[03:39:01.047] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:39:01.070] Server  LOG     ✓ Compiled in 26ms
+[03:39:01.963] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:39:03.061] Server  LOG     ✓ Compiled in 20ms
+[03:39:10.288] Browser ERROR   uncaughtError: TypeError: Users.map is not a function
+[03:39:25.329] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:39:25.352] Server  LOG     ✓ Compiled in 25ms
+[03:39:26.365] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:39:31.176] Browser ERROR   uncaughtError: TypeError: Users.map is not a function
+[03:41:28.353] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[03:41:28.371] Server  LOG     ✓ Compiled in 19ms
+[03:41:29.161] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:43:11.622] Server  LOG     ✓ Compiled in 18ms
+[03:43:25.943] Server  LOG     ✓ Compiled in 16ms
+[03:43:30.587] Server  LOG     ✓ Compiled in 17ms
+[04:44:31.741] Server  LOG     ✓ Compiled in 506ms
+[04:44:52.036] Server  LOG     ✓ Compiled in 438ms
+[04:45:07.404] Server  LOG     ✓ Compiled in 21ms
+[04:45:10.629] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:48:11.344] Server  LOG     ✓ Compiled in 17ms
+[04:48:55.249] Server  LOG     ✓ Compiled in 32ms
+[04:48:56.279] Browser ERROR   ./src/app/components/AllUsers.tsx:75:16
+Parsing ecmascript source code failed
+  73 |                   count={10}
+  74 |                   page={}
+> 75 |               />
+     |                ^
+  76 |       </Stack>
+  77 |     </>
+  78 |   );
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AllUsers.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AllUsers.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[04:49:08.057] Browser ERROR   ./src/app/components/AllUsers.tsx:75:16
+Parsing ecmascript source code failed
+  73 |                   count={10}
+  74 |                   page={}
+> 75 |               />
+     |                ^
+  76 |       </Stack>
+  77 |     </>
+  78 |   );
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AllUsers.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AllUsers.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[04:49:30.748] Browser ERROR   ./src/app/components/AllUsers.tsx:75:16
+Parsing ecmascript source code failed
+  73 |                   count={10}
+  74 |                   page={}
+> 75 |               />
+     |                ^
+  76 |       </Stack>
+  77 |     </>
+  78 |   );
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AllUsers.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AllUsers.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[04:49:39.864] Browser ERROR   ./src/app/components/AllUsers.tsx:75:16
+Parsing ecmascript source code failed
+  73 |                   count={10}
+  74 |                   page={}
+> 75 |               />
+     |                ^
+  76 |       </Stack>
+  77 |     </>
+  78 |   );
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AllUsers.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AllUsers.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[04:49:45.111] Browser ERROR   ./src/app/components/AllUsers.tsx:75:16
+Parsing ecmascript source code failed
+  73 |                   count={10}
+  74 |                   page={}
+> 75 |               />
+     |                ^
+  76 |       </Stack>
+  77 |     </>
+  78 |   );
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AllUsers.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AllUsers.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[04:50:18.659] Server  LOG     ✓ Compiled in 34ms
+[04:51:01.600] Server  LOG     ✓ Compiled in 16ms
+[04:53:13.461] Server  LOG     ✓ Compiled in 20ms
+[04:53:20.352] Server  LOG     ✓ Compiled in 19ms
