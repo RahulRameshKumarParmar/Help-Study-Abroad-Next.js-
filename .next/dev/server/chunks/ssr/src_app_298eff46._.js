@@ -188,12 +188,12 @@ function AllUsers() {
                 }, void 0, false, {
                     fileName: "[project]/src/app/components/AllUsers.tsx",
                     lineNumber: 72,
-                    columnNumber: 15
+                    columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/components/AllUsers.tsx",
                 lineNumber: 71,
-                columnNumber: 11
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true);

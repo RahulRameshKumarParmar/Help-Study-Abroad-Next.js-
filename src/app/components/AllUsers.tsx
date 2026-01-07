@@ -1,6 +1,6 @@
 "use client";
 
-interface User {
+export interface User {
   id: number;
   firstName: string;
   lastName: string;
@@ -13,7 +13,7 @@ interface User {
 }
 
 import {
-    Pagination,
+  Pagination,
   Paper,
   Stack,
   Table,
@@ -24,10 +24,11 @@ import {
   TableRow,
 } from "@mui/material";
 import { useEffect, useState } from "react";
+import SearchFilter from "./SearchFilter";
 
 export default function AllUsers() {
-    const [Users, setUsers] = useState<User[]>([]);
-    const [skip, setSkip] = useState(0);
+  const [Users, setUsers] = useState<User[]>([]);
+  const [skip, setSkip] = useState(0);
 
   useEffect(() => {
     const getUsers = async () => {
@@ -42,6 +43,7 @@ export default function AllUsers() {
   });
   return (
     <>
+      <SearchFilter />
       <TableContainer component={Paper}>
         <Table>
           <TableHead>
@@ -68,12 +70,12 @@ export default function AllUsers() {
         </Table>
       </TableContainer>
 
-          <Stack spacing={2}>
-              <Pagination
-                  count={10}
-                  page={skip}
-                  onChange={(e, value) => setSkip(value)}
-              />
+      <Stack spacing={2}>
+        <Pagination
+          count={10}
+          page={skip}
+          onChange={(e, value) => setSkip(value)}
+        />
       </Stack>
     </>
   );
