@@ -1,128 +1,23 @@
-[00:00:08.271] Server  LOG     ✓ Ready in 8s
-[00:00:08.272] Server  WARN    ⚠ Cross origin request detected from 489krh-3000.csb.app to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+[00:00:03.938] Server  LOG     ✓ Ready in 3.5s
+[00:00:07.635] Server  LOG     ○ Compiling / ...
+[00:00:09.956] Server  WARN    ⚠ Cross origin request detected from 489krh-3000.csb.app to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:13.097] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:16.097] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:18.026] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:20.641] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:23.366] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:04:39.368] Browser ERROR   unhandledRejection: TypeError: NetworkError when attempting to fetch resource.
-[00:10:16.637] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:12:27.852] Server  LOG     ✓ Compiled in 693ms
-[00:14:03.806] Server  LOG     ✓ Compiled in 2.5s
-[00:14:07.924] Server  LOG     ✓ Compiled in 14ms
-[00:14:09.318] Server  LOG     ✓ Compiled in 16ms
-[00:28:53.119] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:29:24.359] Server  LOG     ✓ Compiled in 1850ms
-[00:34:10.710] Server  LOG     ✓ Compiled in 30ms
-[00:34:49.793] Server  LOG     ✓ Compiled in 11ms
-[00:35:06.938] Server  LOG     ✓ Compiled in 10ms
-[00:35:11.115] Server  LOG     ✓ Compiled in 6ms
-[00:37:18.221] Server  LOG     ✓ Compiled in 26ms
-[00:37:19.508] Browser ERROR   A component is changing an uncontrolled input to be controlled. This is likely caused by the value changing from undefined to a defined value, which should not happen. Decide between using a controlled or uncontrolled input element for the lifetime of the component. More info: https://react.dev/link/controlled-components
-[00:37:33.493] Server  LOG     ✓ Compiled in 11ms
-[00:37:55.738] Server  LOG     ✓ Compiled in 13ms
-[00:37:57.043] Browser ERROR   uncaughtError: ReferenceError: handleSearch is not defined
-[00:38:11.597] Server  LOG     ✓ Finished filesystem cache database compaction in 11.8s
-[00:38:12.820] Server  LOG     ✓ Compiled in 19ms
-[00:38:13.063] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
-[00:38:15.995] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:42:46.406] Server  LOG     ✓ Compiled in 13ms
-[00:48:32.448] Server  LOG     ✓ Compiled in 10ms
-[00:49:06.634] Server  LOG     ✓ Compiled in 1131ms
-[00:49:07.944] Browser ERROR   ./src/app/components/SearchFilter.tsx:29:12
-Parsing ecmascript source code failed
-  27 |   const handleSearch = () => {
-  28 |     if (searched) {
-> 29 |       const;
-     |            ^
-  30 |     }
-  31 |   };
-  32 |
+[00:00:10.229] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:12.594] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:16.338] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:45.702] Server  LOG     ✓ Compiled in 9ms
+[00:00:46.430] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
 
-Trailing comma is not allowed
+Previous: %s
+Incoming: %s useEffect [] [, ]
+[00:00:54.590] Server  LOG     ✓ Compiled in 13ms
+[00:00:56.172] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
 
-Import traces:
-  Client Component Browser:
-    ./src/app/components/SearchFilter.tsx [Client Component Browser]
-    ./src/app/components/AllUsers.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/SearchFilter.tsx [Client Component SSR]
-    ./src/app/components/AllUsers.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:49:30.049] Server  LOG     ✓ Compiled in 12ms
-[00:51:15.108] Server  LOG     ✓ Compiled in 9ms
-[00:51:16.501] Browser ERROR   ./src/app/components/SearchFilter.tsx:31:9
-Parsing ecmascript source code failed
-  29 |       const lowerCaseSearch = searched.toLocaleLowerCase();
-  30 |       users.map((user) => (
-> 31 |         if(searched.includes(user.firstName)){
-     |         ^^
-  32 |             
-  33 |         }
-  34 |       ))
-
-Expression expected
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/SearchFilter.tsx [Client Component Browser]
-    ./src/app/components/AllUsers.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/SearchFilter.tsx [Client Component SSR]
-    ./src/app/components/AllUsers.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:54:57.207] Server  LOG     ✓ Compiled in 9ms
-[00:55:03.377] Server  LOG     ✓ Compiled in 6ms
-[00:55:07.572] Server  LOG     ✓ Compiled in 8ms
-[00:55:08.888] Browser ERROR   ./src/app/components/SearchFilter.tsx:36:45
-Parsing ecmascript source code failed
-  34 |         lowerCaseSearch.includes(user.company.name),
-  35 |         lowerCaseSearch.includes(user.gender),
-> 36 |         lowerCaseSearch.includes(user.phone);
-     |                                             ^
-  37 |       ))
-  38 |     }
-  39 |   };
-
-Expected ',', got ';'
-
-Import traces:
-  Client Component Browser:
-    ./src/app/components/SearchFilter.tsx [Client Component Browser]
-    ./src/app/components/AllUsers.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Client Component Browser]
-    ./src/app/dashboard/page.tsx [Server Component]
-
-  Client Component SSR:
-    ./src/app/components/SearchFilter.tsx [Client Component SSR]
-    ./src/app/components/AllUsers.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Client Component SSR]
-    ./src/app/dashboard/page.tsx [Server Component]
-[00:55:08.963] Server  LOG     ✓ Compiled in 50ms
-[00:55:24.125] Server  LOG     ✓ Compiled in 29ms
-[00:55:32.625] Server  LOG     ✓ Compiled in 27ms
-[00:55:44.383] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:55:55.057] Browser ERROR   uncaughtError: TypeError: users.filter is not a function
-[00:56:41.254] Server  LOG     ✓ Compiled in 7ms
-[00:56:45.656] Browser ERROR   uncaughtError: TypeError: users.filter is not a function
-[01:03:19.251] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:10:10.279] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:12:13.949] Server  LOG     ✓ Compiled in 149ms
-[01:12:37.168] Server  LOG     ✓ Compiled in 7ms
-[01:14:00.346] Server  LOG     ✓ Compiled in 10ms
-[01:14:13.479] Browser ERROR   uncaughtError: TypeError: users.filter is not a function
-[01:14:39.160] Server  LOG     ✓ Compiled in 11ms
-[01:14:40.453] Browser ERROR   Error is: {}
-[01:14:47.412] Server  LOG     ✓ Compiled in 9ms
-[01:14:57.988] Server  LOG     ✓ Compiled in 7ms
-[01:15:08.112] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[01:15:14.444] Browser ERROR   uncaughtError: TypeError: getUsers.filter is not a function
+Previous: %s
+Incoming: %s useEffect [, ] []
+[00:02:25.682] Browser ERROR   unhandledRejection: TypeError: NetworkError when attempting to fetch resource.
+[00:10:22.352] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:14.939] Server  LOG     ✓ Compiled in 2.9s
+[00:18:23.795] Server  LOG     ✓ Compiled in 438ms
+[00:19:01.218] Server  LOG     ✓ Compiled in 21ms
+[00:19:20.287] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold

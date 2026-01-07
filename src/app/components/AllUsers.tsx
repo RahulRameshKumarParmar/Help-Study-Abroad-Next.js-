@@ -23,8 +23,10 @@ import {
   TableHead,
   TableRow,
 } from "@mui/material";
+
 import { useEffect, useState } from "react";
-import SearchFilter from "./SearchFilter";
+import { Search } from "@mui/icons-material";
+import { InputAdornment, TextField } from "@mui/material";
 
 export default function AllUsers() {
   const [Users, setUsers] = useState<User[]>([]);
@@ -40,10 +42,65 @@ export default function AllUsers() {
     };
 
     getUsers();
-  });
+  }, [skip]);
+
+  const [filterUsers, setFilterUsers] = useState<User[]>([]);
+  const [filterResult, setFilterResult] = useState<User[]>([]);
+  const [searched, setSearched] = useState("");
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch("https://dummyjson.com/users");
+        const getData = await response.json();
+        setFilterUsers(getData.users);
+      } catch (error) {
+        console.error("Error is:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    const handleSearch = () => {
+      if (searched !== "") {
+        const lowerCaseSearch = searched.toLowerCase();
+        const filter = filterUsers.filter(
+          (user) =>
+            user.firstName.toLowerCase().includes(lowerCaseSearch) ||
+            user.lastName.toLowerCase().includes(lowerCaseSearch) ||
+            user.email.toLowerCase().includes(lowerCaseSearch) ||
+            user.company.name.toLowerCase().includes(lowerCaseSearch) ||
+            user.gender.toLowerCase().includes(lowerCaseSearch) ||
+            user.phone.toLowerCase().includes(lowerCaseSearch)
+        );
+        setFilterResult(filter);
+      }
+    };
+
+    handleSearch();
+  }, [searched]);
+
   return (
     <>
-      <SearchFilter />
+      <TextField
+        placeholder="Search Users..."
+        variant="outlined"
+        fullWidth
+        value={searched}
+        onChange={(e) => setSearched(e.target.value)}
+        slotProps={{
+          input: {
+            startAdornment: (
+              <InputAdornment position="start">
+                <Search />
+              </InputAdornment>
+            ),
+          },
+        }}
+      />
+
       <TableContainer component={Paper}>
         <Table>
           <TableHead>
@@ -57,15 +114,25 @@ export default function AllUsers() {
           </TableHead>
 
           <TableBody>
-            {Users.map((user) => (
-              <TableRow key={user.id}>
-                <TableCell>{user.firstName + user.lastName}</TableCell>
-                <TableCell>{user.email}</TableCell>
-                <TableCell>{user.gender}</TableCell>
-                <TableCell>{user.phone}</TableCell>
-                <TableCell>{user.company.name}</TableCell>
-              </TableRow>
-            ))}
+            {searched !== ""
+              ? filterResult.map((user) => (
+                  <TableRow key={user.id}>
+                    <TableCell>{user.firstName + user.lastName}</TableCell>
+                    <TableCell>{user.email}</TableCell>
+                    <TableCell>{user.gender}</TableCell>
+                    <TableCell>{user.phone}</TableCell>
+                    <TableCell>{user.company.name}</TableCell>
+                  </TableRow>
+                ))
+              : Users.map((user) => (
+                  <TableRow key={user.id}>
+                    <TableCell>{user.firstName + user.lastName}</TableCell>
+                    <TableCell>{user.email}</TableCell>
+                    <TableCell>{user.gender}</TableCell>
+                    <TableCell>{user.phone}</TableCell>
+                    <TableCell>{user.company.name}</TableCell>
+                  </TableRow>
+                ))}
           </TableBody>
         </Table>
       </TableContainer>
