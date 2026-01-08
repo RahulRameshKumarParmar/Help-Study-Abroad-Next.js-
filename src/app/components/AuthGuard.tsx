@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import React, { useEffect } from "react";
-import { useAppSelector } from "../store/store";
+import { useAppSelector } from "../store/hooks";
 
 export default function AuthGuard({ children }: { children: React.ReactNode }) {
   const router = useRouter();

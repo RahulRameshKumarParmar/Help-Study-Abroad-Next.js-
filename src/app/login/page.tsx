@@ -8,10 +8,10 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
-import { useAppDispatch, useAppSelector } from "../store/store";
 import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
+import { useAppDispatch, useAppSelector } from "../store/hooks";
 
 export default function LoginPage() {
   const dispatch = useAppDispatch();
@@ -26,7 +26,7 @@ export default function LoginPage() {
 
   useEffect(() => {
     if (isAuth) {
-      router.replace('/dashboard');
+      router.replace("/dashboard");
     }
   }, [isAuth, router]);
 
@@ -76,7 +76,6 @@ export default function LoginPage() {
           </Typography>
 
           <Box component="form">
-
             <TextField
               label="Username"
               fullWidth
@@ -95,7 +94,7 @@ export default function LoginPage() {
             />
 
             {error && (
-              <Typography color="error" sx={{mt: 1}}>
+              <Typography color="error" sx={{ mt: 1 }}>
                 {error}
               </Typography>
             )}
@@ -107,7 +106,7 @@ export default function LoginPage() {
               onClick={handleLogin}
               disabled={loading}
             >
-              {loading ? 'Logging in ...' : 'Login'}
+              {loading ? "Logging in ..." : "Login"}
             </Button>
           </Box>
         </Paper>

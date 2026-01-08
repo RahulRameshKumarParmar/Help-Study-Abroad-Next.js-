@@ -27,10 +27,14 @@ import {
 import { useEffect, useState } from "react";
 import { Search } from "@mui/icons-material";
 import { InputAdornment, TextField } from "@mui/material";
+import { getSingleUserPage, getUserData, setSkip } from "../store/usersSlice";
+import { useAppDispatch, useAppSelector } from "../store/hooks";
+import { useRouter } from "next/navigation";
 
 export default function AllUsers() {
-  const [Users, setUsers] = useState<User[]>([]);
-  const [skip, setSkip] = useState(0);
+  const dispatch = useAppDispatch();
+  const paginationUsers = useAppSelector((state) => state.users.users);
+  const skip = useAppSelector((state) => state.users.skip);
 
   useEffect(() => {
     const getUsers = async () => {
@@ -38,7 +42,7 @@ export default function AllUsers() {
         `https://dummyjson.com/users?limit=10&skip=${skip}`
       );
       const getUsers = await fetchData.json();
-      setUsers(getUsers.users);
+      dispatch(getUserData(getUsers.users));
     };
 
     getUsers();
@@ -82,6 +86,9 @@ export default function AllUsers() {
     handleSearch();
   }, [searched]);
 
+  const selectedUser = useAppSelector((state) => state.users.fullDetails);
+  const router = useRouter();
+
   return (
     <>
       <TextField
@@ -124,8 +131,14 @@ export default function AllUsers() {
                     <TableCell>{user.company.name}</TableCell>
                   </TableRow>
                 ))
-              : Users.map((user) => (
-                  <TableRow key={user.id}>
+              : paginationUsers.map((user) => (
+                  <TableRow
+                    key={user.id}
+                    onClick={() => {
+                      dispatch(getSingleUserPage(user.id));
+                      selectedUser !== null ? router.push("/user") : null;
+                    }}
+                  >
                     <TableCell>{user.firstName + user.lastName}</TableCell>
                     <TableCell>{user.email}</TableCell>
                     <TableCell>{user.gender}</TableCell>
@@ -141,7 +154,7 @@ export default function AllUsers() {
         <Pagination
           count={10}
           page={skip}
-          onChange={(e, value) => setSkip(value)}
+          onChange={(e, value) => dispatch(setSkip(value))}
         />
       </Stack>
     </>

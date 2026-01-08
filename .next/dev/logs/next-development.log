@@ -1,23 +1,2321 @@
-[00:00:03.938] Server  LOG     ✓ Ready in 3.5s
-[00:00:07.635] Server  LOG     ○ Compiling / ...
-[00:00:09.956] Server  WARN    ⚠ Cross origin request detected from 489krh-3000.csb.app to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+[00:00:15.629] Server  LOG     ✓ Ready in 15.2s
+[00:00:15.630] Server  WARN    ⚠ Cross origin request detected from 489krh-3000.csb.app to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
 Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
-[00:00:10.229] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:12.594] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:16.338] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:45.702] Server  LOG     ✓ Compiled in 9ms
-[00:00:46.430] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+[00:00:18.646] Server  LOG     ○ Compiling / ...
+[00:00:24.282] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:26.186] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:27.860] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:30.071] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:36.080] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:40.671] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:42.926] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:45.173] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:48.508] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:32:15.604] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:34:00.659] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:42:55.664] Server  LOG     ✓ Compiled in 868ms
+[00:43:01.410] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:47:30.837] Server  LOG     ✓ Compiled in 7ms
+[00:49:00.817] Server  LOG     ✓ Compiled in 1447ms
+[00:49:02.142] Browser ERROR   ./src/app/store/usersSlice.ts:33:53
+Parsing ecmascript source code failed
+  31 |     },
+  32 |
+> 33 |     setSkip: (state, action: PayloadAction<Pick<User: skip>) => {},
+     |                                                     ^
+  34 |   },
+  35 | });
+  36 |
 
-Previous: %s
-Incoming: %s useEffect [] [, ]
-[00:00:54.590] Server  LOG     ✓ Compiled in 13ms
-[00:00:56.172] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+Expected ',', got ':'
 
-Previous: %s
-Incoming: %s useEffect [, ] []
-[00:02:25.682] Browser ERROR   unhandledRejection: TypeError: NetworkError when attempting to fetch resource.
-[00:10:22.352] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:18:14.939] Server  LOG     ✓ Compiled in 2.9s
-[00:18:23.795] Server  LOG     ✓ Compiled in 438ms
-[00:19:01.218] Server  LOG     ✓ Compiled in 21ms
-[00:19:20.287] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+Import traces:
+  Client Component Browser:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/store/store.ts [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/store/store.ts [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:49:49.191] Browser ERROR   ./src/app/store/usersSlice.ts:33:53
+Parsing ecmascript source code failed
+  31 |     },
+  32 |
+> 33 |     setSkip: (state, action: PayloadAction<Pick<User: 'skip'>>) => {},
+     |                                                     ^
+  34 |   },
+  35 | });
+  36 |
+
+Expected ',', got ':'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/store/store.ts [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/store/store.ts [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:50:09.887] Server  LOG     ✓ Compiled in 40ms
+[00:50:11.234] Browser ERROR   ./src/app/store/usersSlice.ts:33:54
+Parsing ecmascript source code failed
+  31 |     },
+  32 |
+> 33 |     setSkip: (state, action: PayloadAction<Pick<User 'skip'>>) => {},
+     |                                                      ^^^^^^
+  34 |   },
+  35 | });
+  36 |
+
+Expected ',', got 'string literal ("skip", 'skip')'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/store/store.ts [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/store/store.ts [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[00:50:16.165] Server  LOG     ✓ Compiled in 31ms
+[00:51:01.502] Server  LOG     ✓ Compiled in 7ms
+[00:52:34.971] Server  LOG     ✓ Compiled in 11ms
+[00:53:05.418] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:53:13.989] Server  LOG     ○ Compiling /dashboard ...
+[00:57:20.675] Server  LOG     ✓ Compiled in 26ms
+[01:00:13.693] Server  LOG     ✓ Compiled in 8ms
+[01:00:29.994] Server  LOG     ✓ Compiled in 7ms
+[01:01:41.097] Server  LOG     ✓ Compiled in 14ms
+[01:01:47.409] Server  LOG     ✓ Compiled in 9ms
+[01:01:57.147] Server  LOG     ✓ Compiled in 53ms
+[01:02:02.711] Server  LOG     ✓ Compiled in 21ms
+[01:02:33.603] Server  LOG     ✓ Compiled in 13ms
+[01:10:26.881] Server  LOG     ✓ Compiled in 18ms
+[01:11:54.886] Server  LOG     ✓ Compiled in 19ms
+[01:14:04.445] Server  LOG     ✓ Compiled in 48ms
+[01:14:05.938] Browser ERROR   ./src/app/store/usersSlice.ts:41:9
+Parsing ecmascript source code failed
+  39 |     getSingleUserPage: (state, action: PayloadAction<number>) => {
+  40 |       const findUser = state.users.map((user) => (
+> 41 |         if(user.id){
+     |         ^^
+  42 |           
+  43 |         }
+  44 |       ))
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/store/store.ts [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/store/store.ts [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[01:16:38.852] Browser ERROR   ./src/app/store/usersSlice.ts:41:9
+Parsing ecmascript source code failed
+  39 |     getSingleUserPage: (state, action: PayloadAction<number>) => {
+  40 |       const findUser = state.users.map((user) => (
+> 41 |         if(user.id){
+     |         ^^
+  42 |           
+  43 |         }
+  44 |       ))
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/store/store.ts [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/store/store.ts [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[01:16:38.852] Browser ERROR   ./src/app/store/usersSlice.ts:41:9
+Parsing ecmascript source code failed
+  39 |     getSingleUserPage: (state, action: PayloadAction<number>) => {
+  40 |       const findUser = state.users.map((user) => (
+> 41 |         if(user.id){
+     |         ^^
+  42 |           
+  43 |         }
+  44 |       ))
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/store/store.ts [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/store/store.ts [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[01:16:38.853] Browser ERROR   ./src/app/store/usersSlice.ts:41:9
+Parsing ecmascript source code failed
+  39 |     getSingleUserPage: (state, action: PayloadAction<number>) => {
+  40 |       const findUser = state.users.map((user) => (
+> 41 |         if(user.id){
+     |         ^^
+  42 |           
+  43 |         }
+  44 |       ))
+
+Expression expected
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/components/AllUsers.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  #2 [Client Component SSR]:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/components/AllUsers.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  #3 [Client Component Browser]:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/store/store.ts [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  #4 [Client Component SSR]:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/store/store.ts [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[01:16:38.853] Browser ERROR   ./src/app/store/usersSlice.ts:41:9
+Parsing ecmascript source code failed
+  39 |     getSingleUserPage: (state, action: PayloadAction<number>) => {
+  40 |       const findUser = state.users.map((user) => (
+> 41 |         if(user.id){
+     |         ^^
+  42 |           
+  43 |         }
+  44 |       ))
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/store/store.ts [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/store/store.ts [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[01:17:13.927] Server  ERROR   ⨯ ./src/app/store/usersSlice.ts:41:9
+Parsing ecmascript source code failed
+  39 |     getSingleUserPage: (state, action: PayloadAction<number>) => {
+  40 |       const findUser = state.users.map((user) => (
+> 41 |         if(user.id){
+     |         ^^
+  42 |           
+  43 |         }
+  44 |       ))
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/store/store.ts [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/store/store.ts [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+
+[01:17:16.936] Server  LOG     ○ Compiling /_error ...
+[01:17:17.819] Browser ERROR   ./src/app/store/usersSlice.ts:41:9
+Parsing ecmascript source code failed
+  39 |     getSingleUserPage: (state, action: PayloadAction<number>) => {
+  40 |       const findUser = state.users.map((user) => (
+> 41 |         if(user.id){
+     |         ^^
+  42 |           
+  43 |         }
+  44 |       ))
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/store/store.ts [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/store/store.ts [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[01:17:17.819] Browser ERROR   ./src/app/store/usersSlice.ts:41:9
+Parsing ecmascript source code failed
+  39 |     getSingleUserPage: (state, action: PayloadAction<number>) => {
+  40 |       const findUser = state.users.map((user) => (
+> 41 |         if(user.id){
+     |         ^^
+  42 |           
+  43 |         }
+  44 |       ))
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/store/store.ts [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/store/store.ts [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[01:17:17.819] Browser ERROR   ./src/app/store/usersSlice.ts:41:9
+Parsing ecmascript source code failed
+  39 |     getSingleUserPage: (state, action: PayloadAction<number>) => {
+  40 |       const findUser = state.users.map((user) => (
+> 41 |         if(user.id){
+     |         ^^
+  42 |           
+  43 |         }
+  44 |       ))
+
+Expression expected
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/components/AllUsers.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  #2 [Client Component SSR]:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/components/AllUsers.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  #3 [Client Component Browser]:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/store/store.ts [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  #4 [Client Component SSR]:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/store/store.ts [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[01:17:20.852] Browser ERROR   ./src/app/store/usersSlice.ts:41:9
+Parsing ecmascript source code failed
+  39 |     getSingleUserPage: (state, action: PayloadAction<number>) => {
+  40 |       const findUser = state.users.map((user) => (
+> 41 |         if(user.id){
+     |         ^^
+  42 |           
+  43 |         }
+  44 |       ))
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/store/store.ts [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/store/store.ts [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[01:17:20.852] Browser ERROR   ./src/app/store/usersSlice.ts:41:9
+Parsing ecmascript source code failed
+  39 |     getSingleUserPage: (state, action: PayloadAction<number>) => {
+  40 |       const findUser = state.users.map((user) => (
+> 41 |         if(user.id){
+     |         ^^
+  42 |           
+  43 |         }
+  44 |       ))
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/store/store.ts [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/store/store.ts [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[01:17:23.424] Browser ERROR   uncaughtError: Error: ./src/app/store/usersSlice.ts:41:9
+Parsing ecmascript source code failed
+  39 |     getSingleUserPage: (state, action: PayloadAction<number>) => {
+  40 |       const findUser = state.users.map((user) => (
+> 41 |         if(user.id){
+     |         ^^
+  42 |           
+  43 |         }
+  44 |       ))
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/store/store.ts [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/store/store.ts [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+
+[01:17:24.432] Browser ERROR   ./src/app/store/usersSlice.ts:41:9
+Parsing ecmascript source code failed
+  39 |     getSingleUserPage: (state, action: PayloadAction<number>) => {
+  40 |       const findUser = state.users.map((user) => (
+> 41 |         if(user.id){
+     |         ^^
+  42 |           
+  43 |         }
+  44 |       ))
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/store/store.ts [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/store/store.ts [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[01:17:24.432] Browser ERROR   ./src/app/store/usersSlice.ts:41:9
+Parsing ecmascript source code failed
+  39 |     getSingleUserPage: (state, action: PayloadAction<number>) => {
+  40 |       const findUser = state.users.map((user) => (
+> 41 |         if(user.id){
+     |         ^^
+  42 |           
+  43 |         }
+  44 |       ))
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/store/store.ts [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/store/store.ts [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[01:17:24.432] Browser ERROR   ./src/app/store/usersSlice.ts:41:9
+Parsing ecmascript source code failed
+  39 |     getSingleUserPage: (state, action: PayloadAction<number>) => {
+  40 |       const findUser = state.users.map((user) => (
+> 41 |         if(user.id){
+     |         ^^
+  42 |           
+  43 |         }
+  44 |       ))
+
+Expression expected
+
+Import traces:
+  #1 [Client Component Browser]:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/components/AllUsers.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  #2 [Client Component SSR]:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/components/AllUsers.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  #3 [Client Component Browser]:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/store/store.ts [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  #4 [Client Component SSR]:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/store/store.ts [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[01:17:24.432] Browser ERROR   ./src/app/store/usersSlice.ts:41:9
+Parsing ecmascript source code failed
+  39 |     getSingleUserPage: (state, action: PayloadAction<number>) => {
+  40 |       const findUser = state.users.map((user) => (
+> 41 |         if(user.id){
+     |         ^^
+  42 |           
+  43 |         }
+  44 |       ))
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/store/store.ts [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/store/store.ts [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[01:17:43.623] Server  LOG     ✓ Finished filesystem cache database compaction in 17.6s
+[01:18:23.227] Server  LOG     ✓ Compiled in 8ms
+[01:18:23.435] Browser ERROR   ./src/app/store/usersSlice.ts:42:7
+Parsing ecmascript source code failed
+  40 |       const findUser = state.users.filter((user) => (
+  41 |         user.id ===
+> 42 |       ))
+     |       ^
+  43 |     },
+  44 |   },
+  45 | });
+
+Expression expected
+
+Import traces:
+  Client Component Browser:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/store/store.ts [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/store/store.ts [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[01:18:26.364] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:19:35.177] Server  LOG     ✓ Compiled in 8ms
+[01:19:59.636] Server  LOG     ✓ Compiled in 13ms
+[01:20:58.914] Server  LOG     ✓ Compiled in 10ms
+[01:22:14.703] Server  LOG     ✓ Compiled in 7ms
+[01:23:05.833] Server  LOG     ✓ Compiled in 8ms
+[01:24:00.474] Server  LOG     ✓ Compiled in 16ms
+[01:24:01.817] Browser ERROR   ./src/app/store/usersSlice.ts:40:24
+Parsing ecmascript source code failed
+  38 |
+  39 |     getSingleUserPage: (state, action: PayloadAction<number>) => {
+> 40 |       const findUser:  = state.users.filter(
+     |                        ^
+  41 |         (user) => user.id === action.payload
+  42 |       );
+  43 |
+
+Unexpected token `=`. Expected an identifier, void, yield, null, await, break, a string literal, a numeric literal, true, false, `, -, import, this, typeof, {, [, (
+
+Import traces:
+  Client Component Browser:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/store/store.ts [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/store/store.ts [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[01:24:14.981] Browser ERROR   ./src/app/store/usersSlice.ts:40:24
+Parsing ecmascript source code failed
+  38 |
+  39 |     getSingleUserPage: (state, action: PayloadAction<number>) => {
+> 40 |       const findUser:  = state.users.filter(
+     |                        ^
+  41 |         (user) => user.id === action.payload
+  42 |       );
+  43 |
+
+Unexpected token `=`. Expected an identifier, void, yield, null, await, break, a string literal, a numeric literal, true, false, `, -, import, this, typeof, {, [, (
+
+Import traces:
+  Client Component Browser:
+    ./src/app/store/usersSlice.ts [Client Component Browser]
+    ./src/app/store/store.ts [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Client Component Browser]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/store/usersSlice.ts [Client Component SSR]
+    ./src/app/store/store.ts [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Client Component SSR]
+    ./src/app/store/ReduxProvider.tsx [Server Component]
+    ./src/app/layout.tsx [Server Component]
+[01:25:10.003] Server  LOG     ✓ Compiled in 14ms
+[01:25:23.305] Server  LOG     ✓ Compiled in 6ms
+[01:39:32.637] Server  LOG     ✓ Compiled in 3s
+[01:39:34.523] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppDispatch doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppDispatch was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:39:34.523] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppDispatch doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppDispatch was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:39:34.523] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppSelector doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:39:34.523] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppSelector doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:39:34.523] Browser ERROR   ./src/app/components/AllUsers.tsx:30:1
+Export useAppDispatch doesn't exist in target module
+  28 | import { Search } from "@mui/icons-material";
+  29 | import { InputAdornment, TextField } from "@mui/material";
+> 30 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  31 | import { getSingleUserPage, getUserData, setSkip } from "../store/usersSlice";
+  32 |
+  33 | export default function AllUsers() {
+
+The export useAppDispatch was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AllUsers.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AllUsers.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:39:34.523] Browser ERROR   ./src/app/components/AllUsers.tsx:30:1
+Export useAppDispatch doesn't exist in target module
+  28 | import { Search } from "@mui/icons-material";
+  29 | import { InputAdornment, TextField } from "@mui/material";
+> 30 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  31 | import { getSingleUserPage, getUserData, setSkip } from "../store/usersSlice";
+  32 |
+  33 | export default function AllUsers() {
+
+The export useAppDispatch was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AllUsers.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AllUsers.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:39:34.523] Browser ERROR   ./src/app/components/AllUsers.tsx:30:1
+Export useAppSelector doesn't exist in target module
+  28 | import { Search } from "@mui/icons-material";
+  29 | import { InputAdornment, TextField } from "@mui/material";
+> 30 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  31 | import { getSingleUserPage, getUserData, setSkip } from "../store/usersSlice";
+  32 |
+  33 | export default function AllUsers() {
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AllUsers.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AllUsers.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:39:34.523] Browser ERROR   ./src/app/components/AllUsers.tsx:30:1
+Export useAppSelector doesn't exist in target module
+  28 | import { Search } from "@mui/icons-material";
+  29 | import { InputAdornment, TextField } from "@mui/material";
+> 30 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  31 | import { getSingleUserPage, getUserData, setSkip } from "../store/usersSlice";
+  32 |
+  33 | export default function AllUsers() {
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AllUsers.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AllUsers.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:39:34.523] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:39:34.523] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:39:39.924] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppDispatch doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppDispatch was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:39:39.924] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppDispatch doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppDispatch was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:39:39.924] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppSelector doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:39:39.924] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppSelector doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:39:39.924] Browser ERROR   ./src/app/components/AllUsers.tsx:30:1
+Export useAppDispatch doesn't exist in target module
+  28 | import { Search } from "@mui/icons-material";
+  29 | import { InputAdornment, TextField } from "@mui/material";
+> 30 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  31 | import { getSingleUserPage, getUserData, setSkip } from "../store/usersSlice";
+  32 |
+  33 | export default function AllUsers() {
+
+The export useAppDispatch was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AllUsers.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AllUsers.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:39:39.924] Browser ERROR   ./src/app/components/AllUsers.tsx:30:1
+Export useAppDispatch doesn't exist in target module
+  28 | import { Search } from "@mui/icons-material";
+  29 | import { InputAdornment, TextField } from "@mui/material";
+> 30 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  31 | import { getSingleUserPage, getUserData, setSkip } from "../store/usersSlice";
+  32 |
+  33 | export default function AllUsers() {
+
+The export useAppDispatch was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AllUsers.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AllUsers.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:39:39.924] Browser ERROR   ./src/app/components/AllUsers.tsx:30:1
+Export useAppSelector doesn't exist in target module
+  28 | import { Search } from "@mui/icons-material";
+  29 | import { InputAdornment, TextField } from "@mui/material";
+> 30 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  31 | import { getSingleUserPage, getUserData, setSkip } from "../store/usersSlice";
+  32 |
+  33 | export default function AllUsers() {
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AllUsers.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AllUsers.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:39:39.924] Browser ERROR   ./src/app/components/AllUsers.tsx:30:1
+Export useAppSelector doesn't exist in target module
+  28 | import { Search } from "@mui/icons-material";
+  29 | import { InputAdornment, TextField } from "@mui/material";
+> 30 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  31 | import { getSingleUserPage, getUserData, setSkip } from "../store/usersSlice";
+  32 |
+  33 | export default function AllUsers() {
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AllUsers.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AllUsers.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:39:39.924] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:39:39.924] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:40:02.241] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppDispatch doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppDispatch was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:40:02.241] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppDispatch doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppDispatch was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:40:02.241] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppSelector doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:40:02.241] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppSelector doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:40:02.241] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:40:02.241] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:40:16.415] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppDispatch doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppDispatch was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:40:16.416] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppDispatch doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppDispatch was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:40:16.416] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppSelector doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:40:16.416] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppSelector doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:40:16.416] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:40:16.416] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:40:30.920] Server  LOG     ✓ Compiled in 5ms
+[01:40:32.160] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppDispatch doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppDispatch was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:40:32.160] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppDispatch doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppDispatch was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:40:32.160] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppSelector doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:40:32.160] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppSelector doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:40:32.160] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:40:32.160] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:40:42.313] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppDispatch doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppDispatch was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:40:42.313] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppDispatch doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppDispatch was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:40:42.313] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppSelector doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:40:42.313] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppSelector doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:40:42.313] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:40:42.313] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:41:10.149] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppDispatch doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppDispatch was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:41:10.149] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppDispatch doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppDispatch was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:41:10.149] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppSelector doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:41:10.149] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppSelector doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:41:10.149] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:41:10.149] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:41:11.822] Server  LOG     ○ Compiling /_not-found/page ...
+[01:41:27.984] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:41:28.317] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppDispatch doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppDispatch was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:41:28.317] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppDispatch doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppDispatch was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:41:28.317] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppSelector doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:41:28.317] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppSelector doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:41:28.317] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:41:28.317] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:41:28.588] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppDispatch doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppDispatch was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:41:28.588] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppDispatch doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppDispatch was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:41:28.588] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppSelector doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:41:28.588] Browser ERROR   ./src/app/login/page.tsx:11:1
+Export useAppSelector doesn't exist in target module
+   9 |   Typography,
+  10 | } from "@mui/material";
+> 11 | import { useAppDispatch, useAppSelector } from "../store/store";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  12 | import { loginFailure, loginStart, loginSuccess } from "../store/authSlice";
+  13 | import { useEffect, useState } from "react";
+  14 | import { useRouter } from "next/navigation";
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/login/page.tsx [Client Component Browser]
+    ./src/app/login/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/login/page.tsx [Client Component SSR]
+    ./src/app/login/page.tsx [Server Component]
+[01:41:28.588] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:41:28.588] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:41:53.847] Server  LOG     ✓ Compiled in 204ms
+[01:41:54.922] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:41:54.922] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:42:06.927] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:42:06.927] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:42:17.418] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:42:17.831] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:42:17.831] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:42:17.831] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-client] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:42:17.831] Browser ERROR   ./src/app/components/AuthGuard.tsx:5:1
+Export useAppSelector doesn't exist in target module
+  3 | import { useRouter } from "next/navigation";
+  4 | import React, { useEffect } from "react";
+> 5 | import { useAppSelector } from "../store/store";
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  6 |
+  7 | export default function AuthGuard({ children }: { children: React.ReactNode }) {
+  8 |   const router = useRouter();
+
+The export useAppSelector was not found in module [project]/src/app/store/store.ts [app-ssr] (ecmascript).
+Did you mean to import store?
+All exports of the module are statically known (It doesn't have dynamic exports). So it's known statically that the requested export doesn't exist.
+
+Import traces:
+  Client Component Browser:
+    ./src/app/components/AuthGuard.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Client Component Browser]
+    ./src/app/dashboard/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/components/AuthGuard.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Client Component SSR]
+    ./src/app/dashboard/page.tsx [Server Component]
+[01:43:09.072] Server  LOG     ✓ Compiled in 61ms
+[01:43:40.484] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:44:01.359] Browser LOG     {"address":{"address":"626 Main Street","city":"Phoenix","coordinates":{"lat":-77.16213,"lng":-92.084824},"country":"United States","postalCode":"29112","state":"Mississippi","stateCode":"MS"},"age":29,"bank":{"cardExpire":"05/28","cardNumber":"3693233511855044","cardType":"Diners Club International","currency":"GBP","iban":"GB74MH2UZLR9TRPHYNU8F8"},"birthDate":"1996-5-30","bloodGroup":"O-","company":{"address":{"address":"263 Tenth Street","city":"San Francisco","coordinates":{"lat":71.814525,"lng":-161.150263},"country":"United States","postalCode":"37657","state":"Wisconsin","stateCode":"WI"},"department":"Engineering","name":"Dooley, Kozey and Cronin","title":"Sales Manager"},"crypto":{"coin":"Bitcoin","network":"Ethereum (ERC20)","wallet":"0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a"},"ein":"977-175","email":"emily.johnson@x.dummyjson.com","eyeColor":"Green","firstName":"Emily","gender":"female","hair":{"color":"Brown","type":"Curly"},"height":193.24,"id":1,"image":"https://dummyjson.com/icon/emilys/128","ip":"42.48.100.32","lastName":"Johnson","macAddress":"47:fa:41:18:ec:eb","maidenName":"Smith","password":"emilyspass","phone":"+81 965-431-3024","role":"admin","ssn":"900-590-289","university":"University of Wisconsin--Madison","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36","username":"emilys","weight":63.16}
+[01:44:10.812] Browser LOG     {"address":{"address":"626 Main Street","city":"Phoenix","coordinates":{"lat":-77.16213,"lng":-92.084824},"country":"United States","postalCode":"29112","state":"Mississippi","stateCode":"MS"},"age":29,"bank":{"cardExpire":"05/28","cardNumber":"3693233511855044","cardType":"Diners Club International","currency":"GBP","iban":"GB74MH2UZLR9TRPHYNU8F8"},"birthDate":"1996-5-30","bloodGroup":"O-","company":{"address":{"address":"263 Tenth Street","city":"San Francisco","coordinates":{"lat":71.814525,"lng":-161.150263},"country":"United States","postalCode":"37657","state":"Wisconsin","stateCode":"WI"},"department":"Engineering","name":"Dooley, Kozey and Cronin","title":"Sales Manager"},"crypto":{"coin":"Bitcoin","network":"Ethereum (ERC20)","wallet":"0xb9fc2fe63b2a6c003f1c324c3bfa53259162181a"},"ein":"977-175","email":"emily.johnson@x.dummyjson.com","eyeColor":"Green","firstName":"Emily","gender":"female","hair":{"color":"Brown","type":"Curly"},"height":193.24,"id":1,"image":"https://dummyjson.com/icon/emilys/128","ip":"42.48.100.32","lastName":"Johnson","macAddress":"47:fa:41:18:ec:eb","maidenName":"Smith","password":"emilyspass","phone":"+81 965-431-3024","role":"admin","ssn":"900-590-289","university":"University of Wisconsin--Madison","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36","username":"emilys","weight":63.16}
+[01:44:38.598] Server  LOG     ✓ Compiled in 12ms
+[01:44:46.571] Browser LOG     female
+[01:45:15.864] Server  LOG     ✓ Compiled in 17ms
+[02:07:20.673] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:08:01.351] Server  LOG     ○ Compiling /user ...
+[02:08:08.223] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:10:29.819] Server  LOG     ✓ Compiled in 23ms
+[02:48:03.308] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:48:13.550] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:48:28.843] Browser ERROR   uncaughtError: Error: NextRouter was not mounted. https://nextjs.org/docs/messages/next-router-not-mounted
+[02:49:08.421] Server  LOG     ✓ Compiled in 102ms
+[02:49:09.199] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:49:11.707] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:49:19.651] Browser ERROR   uncaughtError: Error: Objects are not valid as a React child (found: object with keys {address, city, state, stateCode, postalCode, coordinates, country}). If you meant to render a collection of children, use an array instead.
+[02:50:12.237] Server  LOG     ✓ Compiled in 13ms
+[02:50:12.798] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[02:50:15.346] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:50:40.281] Server  LOG     ✓ Compiled in 4.3s
+[02:50:41.592] Browser ERROR   ./src/app/user/page.tsx:46:42
+Parsing ecmascript source code failed
+  44 |               </Typography>
+  45 |               <Typography variant="body1">
+> 46 |                 Address : {selectedUser?.}
+     |                                          ^
+  47 |               </Typography>
+  48 |             </Stack>
+  49 |           </CardContent>
+
+Expected '</', got '}'
+
+Import traces:
+  Client Component Browser:
+    ./src/app/user/page.tsx [Client Component Browser]
+    ./src/app/user/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./src/app/user/page.tsx [Client Component SSR]
+    ./src/app/user/page.tsx [Server Component]
+[02:51:10.015] Server  LOG     ✓ Compiled in 13ms
+[02:51:39.606] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:51:45.246] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:52:46.347] Server  LOG     ✓ Compiled in 10ms
+[02:54:27.333] Server  LOG     ✓ Compiled in 15ms
