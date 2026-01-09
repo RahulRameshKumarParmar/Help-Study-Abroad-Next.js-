@@ -152,7 +152,7 @@ export default function AllUsers() {
 
       <Stack spacing={2}>
         <Pagination
-          count={10}
+          count={3}
           page={skip}
           onChange={(e, value) => dispatch(setSkip(value))}
         />
